@@ -313,7 +313,7 @@ class Component {
    *
    *     var myButton = myComponent.addChild('MyButton');
    *     // -> <div class='my-component'><div class="my-button">myButton<div></div>
-   *     // -> myButton === myComonent.children()[0];
+   *     // -> myButton === myComponent.children()[0];
    *
    * Pass in options for child constructors and options for children of the child
    *

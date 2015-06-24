@@ -2,8 +2,8 @@
 
 # vjs.PosterImage
 
-__EXTENDS__: [vjs.Button](vjs.Button.md)  
-__DEFINED IN__: [src/js/poster.js#L10](https://github.com/videojs/video.js/blob/master/src/js/poster.js#L10)  
+__EXTENDS__: [vjs.Button](vjs.Button.md)
+__DEFINED IN__: [src/js/poster.js#L10](https://github.com/videojs/video.js/blob/master/src/js/poster.js#L10)
 
 The component that handles showing the poster image.
 
@@ -60,18 +60,18 @@ The component that handles showing the poster image.
 
 ### addChild( child, [options] )
 > Adds a child component inside this component
-> 
+>
 >     myComponent.el();
 >     // -> <div class='my-component'></div>
->     myComonent.children();
+>     myComponent.children();
 >     // [empty array]
-> 
+>
 >     var myButton = myComponent.addChild('MyButton');
 >     // -> <div class='my-component'><div class="my-button">myButton<div></div>
->     // -> myButton === myComonent.children()[0];
-> 
+>     // -> myButton === myComponent.children()[0];
+>
 > Pass in options for child constructors and options for children of the child
-> 
+>
 >     var myButton = myComponent.addChild('MyButton', {
 >       text: 'Press Me',
 >       children: {
@@ -81,11 +81,11 @@ The component that handles showing the poster image.
 >       }
 >     });
 
-##### PARAMETERS: 
+##### PARAMETERS:
 * __child__ `String|vjs.Component` The class name or instance of a child to add
 * __options__ `Object` _(OPTIONAL)_ Options, including options to be passed to children of the child.
 
-##### RETURNS: 
+##### RETURNS:
 * `vjs.Component` The child component (created by this process if a string was used)
 
 _inherited from_: [src/js/component.js#L362](https://github.com/videojs/video.js/blob/master/src/js/component.js#L362)
@@ -95,11 +95,11 @@ _inherited from_: [src/js/component.js#L362](https://github.com/videojs/video.js
 ### addClass( classToAdd )
 > Add a CSS class name to the component's element
 
-##### PARAMETERS: 
+##### PARAMETERS:
 * __classToAdd__ `String` Classname to add
 
-##### RETURNS: 
-* `vjs.Component` 
+##### RETURNS:
+* `vjs.Component`
 
 _inherited from_: [src/js/component.js#L826](https://github.com/videojs/video.js/blob/master/src/js/component.js#L826)
 
@@ -108,7 +108,7 @@ _inherited from_: [src/js/component.js#L826](https://github.com/videojs/video.js
 ### buildCSSClass()
 > Allows sub components to stack CSS class names
 
-##### RETURNS: 
+##### RETURNS:
 * `String` The constructed class name
 
 _inherited from_: [src/js/component.js#L536](https://github.com/videojs/video.js/blob/master/src/js/component.js#L536)
@@ -117,10 +117,10 @@ _inherited from_: [src/js/component.js#L536](https://github.com/videojs/video.js
 
 ### children()
 > Get an array of all child components
-> 
+>
 >     var kids = myComponent.children();
 
-##### RETURNS: 
+##### RETURNS:
 * `Array` The children
 
 _inherited from_: [src/js/component.js#L296](https://github.com/videojs/video.js/blob/master/src/js/component.js#L296)
@@ -130,10 +130,10 @@ _inherited from_: [src/js/component.js#L296](https://github.com/videojs/video.js
 ### clearInterval( intervalId )
 > Clears an interval and removes the associated dispose listener
 
-##### PARAMETERS: 
+##### PARAMETERS:
 * __intervalId__ `Number` The id of the interval to clear
 
-##### RETURNS: 
+##### RETURNS:
 * `Number` Returns the interval ID
 
 _inherited from_: [src/js/component.js#L1223](https://github.com/videojs/video.js/blob/master/src/js/component.js#L1223)
@@ -143,10 +143,10 @@ _inherited from_: [src/js/component.js#L1223](https://github.com/videojs/video.j
 ### clearTimeout( timeoutId )
 > Clears a timeout and removes the associated dispose listener
 
-##### PARAMETERS: 
+##### PARAMETERS:
 * __timeoutId__ `Number` The id of the timeout to clear
 
-##### RETURNS: 
+##### RETURNS:
 * `Number` Returns the timeout ID
 
 _inherited from_: [src/js/component.js#L1185](https://github.com/videojs/video.js/blob/master/src/js/component.js#L1185)
@@ -157,8 +157,8 @@ _inherited from_: [src/js/component.js#L1185](https://github.com/videojs/video.j
 > Return the component's DOM element for embedding content.
 > Will either be el_ or a new element defined in createEl.
 
-##### RETURNS: 
-* `Element` 
+##### RETURNS:
+* `Element`
 
 _inherited from_: [src/js/component.js#L239](https://github.com/videojs/video.js/blob/master/src/js/component.js#L239)
 
@@ -167,8 +167,8 @@ _inherited from_: [src/js/component.js#L239](https://github.com/videojs/video.js
 ### createEl()
 > Create the poster image element
 
-##### RETURNS: 
-* `Element` 
+##### RETURNS:
+* `Element`
 
 _defined in_: [src/js/poster.js#L32](https://github.com/videojs/video.js/blob/master/src/js/poster.js#L32)
 
@@ -177,11 +177,11 @@ _defined in_: [src/js/poster.js#L32](https://github.com/videojs/video.js/blob/ma
 ### dimensions( width, height )
 > Set both width and height at the same time
 
-##### PARAMETERS: 
-* __width__ `Number|String` 
-* __height__ `Number|String` 
+##### PARAMETERS:
+* __width__ `Number|String`
+* __height__ `Number|String`
 
-##### RETURNS: 
+##### RETURNS:
 * `vjs.Component` The component
 
 _inherited from_: [src/js/component.js#L938](https://github.com/videojs/video.js/blob/master/src/js/component.js#L938)
@@ -197,11 +197,11 @@ _defined in_: [src/js/poster.js#L23](https://github.com/videojs/video.js/blob/ma
 
 ### el()
 > Get the component's DOM element
-> 
+>
 >     var domEl = myComponent.el();
 
-##### RETURNS: 
-* `Element` 
+##### RETURNS:
+* `Element`
 
 _inherited from_: [src/js/component.js#L220](https://github.com/videojs/video.js/blob/master/src/js/component.js#L220)
 
@@ -209,12 +209,12 @@ _inherited from_: [src/js/component.js#L220](https://github.com/videojs/video.js
 
 ### enableTouchActivity()
 > Report user touch activity when touch events occur
-> 
+>
 > User activity is used to determine when controls should show/hide. It's
 > relatively simple when it comes to mouse events, because any mouse event
 > should show the controls. So we capture mouse events that bubble up to the
 > player and report activity when that happens.
-> 
+>
 > With touch events it isn't as easy. We can't rely on touch events at the
 > player level, because a tap (touchstart + touchend) on the video itself on
 > mobile devices is meant to turn controls off (and on). User activity is
@@ -222,10 +222,10 @@ _inherited from_: [src/js/component.js#L220](https://github.com/videojs/video.js
 > turns the controls off, then the touchend event bubbles up to the player,
 > which if it reported user activity, would turn the controls right back on.
 > (We also don't want to completely block touch events from bubbling up)
-> 
+>
 > Also a touchmove, touch+hold, and anything other than a tap is not supposed
 > to turn the controls back on on a mobile device.
-> 
+>
 > Here we're setting the default component behavior to report user activity
 > whenever touch events happen, and this can be turned off by components that
 > want touch events to act differently.
@@ -237,11 +237,11 @@ _inherited from_: [src/js/component.js#L1124](https://github.com/videojs/video.j
 ### getChild( name )
 > Returns a child component with the provided name
 
-##### PARAMETERS: 
-* __name__ 
+##### PARAMETERS:
+* __name__
 
-##### RETURNS: 
-* `vjs.Component` 
+##### RETURNS:
+* `vjs.Component`
 
 _inherited from_: [src/js/component.js#L330](https://github.com/videojs/video.js/blob/master/src/js/component.js#L330)
 
@@ -250,11 +250,11 @@ _inherited from_: [src/js/component.js#L330](https://github.com/videojs/video.js
 ### getChildById( id )
 > Returns a child component with the provided ID
 
-##### PARAMETERS: 
-* __id__ 
+##### PARAMETERS:
+* __id__
 
-##### RETURNS: 
-* `vjs.Component` 
+##### RETURNS:
+* `vjs.Component`
 
 _inherited from_: [src/js/component.js#L313](https://github.com/videojs/video.js/blob/master/src/js/component.js#L313)
 
@@ -263,11 +263,11 @@ _inherited from_: [src/js/component.js#L313](https://github.com/videojs/video.js
 ### hasClass( classToCheck )
 > Check if a component's element has a CSS class name
 
-##### PARAMETERS: 
+##### PARAMETERS:
 * __classToCheck__ `String` Classname to check
 
-##### RETURNS: 
-* `vjs.Component` 
+##### RETURNS:
+* `vjs.Component`
 
 _inherited from_: [src/js/component.js#L816](https://github.com/videojs/video.js/blob/master/src/js/component.js#L816)
 
@@ -275,17 +275,17 @@ _inherited from_: [src/js/component.js#L816](https://github.com/videojs/video.js
 
 ### height( [num], [skipListeners] )
 > Get or set the height of the component (CSS values)
-> 
+>
 > Setting the video tag dimension values only works with values in pixels.
 > Percent values will not work.
 > Some percents can be used, but width()/height() will return the number + %,
 > not the actual computed width/height.
 
-##### PARAMETERS: 
+##### PARAMETERS:
 * __num__ `Number|String` _(OPTIONAL)_ New component height
 * __skipListeners__ `Boolean` _(OPTIONAL)_ Skip the resize event trigger
 
-##### RETURNS: 
+##### RETURNS:
 * `vjs.Component` This component, when setting the height
 * `Number|String` The height, when getting
 
@@ -296,8 +296,8 @@ _inherited from_: [src/js/component.js#L927](https://github.com/videojs/video.js
 ### hide()
 > Hide the component element if currently showing
 
-##### RETURNS: 
-* `vjs.Component` 
+##### RETURNS:
+* `vjs.Component`
 
 _inherited from_: [src/js/component.js#L857](https://github.com/videojs/video.js/blob/master/src/js/component.js#L857)
 
@@ -305,11 +305,11 @@ _inherited from_: [src/js/component.js#L857](https://github.com/videojs/video.js
 
 ### id()
 > Get the component's ID
-> 
+>
 >     var id = myComponent.id();
 
-##### RETURNS: 
-* `String` 
+##### RETURNS:
+* `String`
 
 _inherited from_: [src/js/component.js#L258](https://github.com/videojs/video.js/blob/master/src/js/component.js#L258)
 
@@ -317,9 +317,9 @@ _inherited from_: [src/js/component.js#L258](https://github.com/videojs/video.js
 
 ### init( player, options )
 
-##### PARAMETERS: 
-* __player__ 
-* __options__ 
+##### PARAMETERS:
+* __player__
+* __options__
 
 _defined in_: [src/js/poster.js#L12](https://github.com/videojs/video.js/blob/master/src/js/poster.js#L12)
 
@@ -327,7 +327,7 @@ _defined in_: [src/js/poster.js#L12](https://github.com/videojs/video.js/blob/ma
 
 ### initChildren()
 > Add and initialize default child components from options
-> 
+>
 >     // when an instance of MyComponent is created, all children in options
 >     // will be added to the instance by their name strings and options
 >     MyComponent.prototype.options_.children = {
@@ -335,7 +335,7 @@ _defined in_: [src/js/poster.js#L12](https://github.com/videojs/video.js/blob/ma
 >         myChildOption: true
 >       }
 >     }
-> 
+>
 >     // Or when creating the component
 >     var myComp = new MyComponent(player, {
 >       children: {
@@ -344,10 +344,10 @@ _defined in_: [src/js/poster.js#L12](https://github.com/videojs/video.js/blob/ma
 >         }
 >       }
 >     });
-> 
+>
 > The children option can also be an Array of child names or
 > child options objects (that also include a 'name' key).
-> 
+>
 >     var myComp = new MyComponent(player, {
 >       children: [
 >         'button',
@@ -364,11 +364,11 @@ _inherited from_: [src/js/component.js#L481](https://github.com/videojs/video.js
 
 ### name()
 > Get the component's name. The name is often used to reference the component.
-> 
+>
 >     var name = myComponent.name();
 
-##### RETURNS: 
-* `String` 
+##### RETURNS:
+* `String`
 
 _inherited from_: [src/js/component.js#L277](https://github.com/videojs/video.js/blob/master/src/js/component.js#L277)
 
@@ -376,26 +376,26 @@ _inherited from_: [src/js/component.js#L277](https://github.com/videojs/video.js
 
 ### off( [first], [second], [third] )
 > Remove an event listener from this component's element
-> 
+>
 >     myComponent.off('eventType', myFunc);
-> 
+>
 > If myFunc is excluded, ALL listeners for the event type will be removed.
 > If eventType is excluded, ALL listeners will be removed from the component.
-> 
+>
 > Alternatively you can use `off` to remove listeners that were added to other
 > elements or components using `myComponent.on(otherComponent...`.
 > In this case both the event type and listener function are REQUIRED.
-> 
+>
 >     myComponent.off(otherElement, 'eventType', myFunc);
 >     myComponent.off(otherComponent, 'eventType', myFunc);
 
-##### PARAMETERS: 
+##### PARAMETERS:
 * __first__ `String|vjs.Component` _(OPTIONAL)_ The event type or other component
 * __second__ `Function|String` _(OPTIONAL)_ The listener function or event type
 * __third__ `Function` _(OPTIONAL)_ The listener for other component
 
-##### RETURNS: 
-* `vjs.Component` 
+##### RETURNS:
+* `vjs.Component`
 
 _inherited from_: [src/js/component.js#L646](https://github.com/videojs/video.js/blob/master/src/js/component.js#L646)
 
@@ -403,37 +403,37 @@ _inherited from_: [src/js/component.js#L646](https://github.com/videojs/video.js
 
 ### on( first, second, third )
 > Add an event listener to this component's element
-> 
+>
 >     var myFunc = function(){
 >       var myComponent = this;
 >       // Do something when the event is fired
 >     };
-> 
+>
 >     myComponent.on('eventType', myFunc);
-> 
+>
 > The context of myFunc will be myComponent unless previously bound.
-> 
+>
 > Alternatively, you can add a listener to another element or component.
-> 
+>
 >     myComponent.on(otherElement, 'eventName', myFunc);
 >     myComponent.on(otherComponent, 'eventName', myFunc);
-> 
+>
 > The benefit of using this over `vjs.on(otherElement, 'eventName', myFunc)`
 > and `otherComponent.on('eventName', myFunc)` is that this way the listeners
 > will be automatically cleaned up when either component is disposed.
 > It will also bind myComponent as the context of myFunc.
-> 
+>
 > **NOTE**: When using this on elements in the page other than window
 > and document (both permanent), if you remove the element from the DOM
 > you need to call `vjs.trigger(el, 'dispose')` on it to clean up
 > references to it and allow the browser to garbage collect it.
 
-##### PARAMETERS: 
+##### PARAMETERS:
 * __first__ `String|vjs.Component` The event type or other component
 * __second__ `Function|String` The event handler or event type
 * __third__ `Function` The event handler
 
-##### RETURNS: 
+##### RETURNS:
 * `vjs.Component` self
 
 _inherited from_: [src/js/component.js#L577](https://github.com/videojs/video.js/blob/master/src/js/component.js#L577)
@@ -449,22 +449,22 @@ _defined in_: [src/js/poster.js#L92](https://github.com/videojs/video.js/blob/ma
 
 ### one( first, second, [third] )
 > Add an event listener to be triggered only once and then removed
-> 
+>
 >     myComponent.one('eventName', myFunc);
-> 
+>
 > Alternatively you can add a listener to another element or component
 > that will be triggered only once.
-> 
+>
 >     myComponent.one(otherElement, 'eventName', myFunc);
 >     myComponent.one(otherComponent, 'eventName', myFunc);
 
-##### PARAMETERS: 
+##### PARAMETERS:
 * __first__ `String|vjs.Component` The event type or other component
 * __second__ `Function|String` The listener function or event type
 * __third__ `Function` _(OPTIONAL)_ The listener function for other component
 
-##### RETURNS: 
-* `vjs.Component` 
+##### RETURNS:
+* `vjs.Component`
 
 _inherited from_: [src/js/component.js#L691](https://github.com/videojs/video.js/blob/master/src/js/component.js#L691)
 
@@ -472,14 +472,14 @@ _inherited from_: [src/js/component.js#L691](https://github.com/videojs/video.js
 
 ### options( obj )
 > Deep merge of options objects
-> 
+>
 > Whenever a property is an object on both options objects
 > the two properties will be merged using vjs.obj.deepMerge.
-> 
+>
 > This is used for merging options for child components. We
 > want it to be easy to override individual options on a child
 > component without having to rewrite all the other default options.
-> 
+>
 >     Parent.prototype.options_ = {
 >       children: {
 >         'childOne': { 'foo': 'bar', 'asdf': 'fdsa' },
@@ -494,11 +494,11 @@ _inherited from_: [src/js/component.js#L691](https://github.com/videojs/video.js
 >         'childFour': {}
 >       }
 >     }
-> 
+>
 >     this.options(newOptions);
-> 
+>
 > RESULT
-> 
+>
 >     {
 >       children: {
 >         'childOne': { 'foo': 'baz', 'asdf': 'fdsa', 'abc': '123' },
@@ -508,10 +508,10 @@ _inherited from_: [src/js/component.js#L691](https://github.com/videojs/video.js
 >       }
 >     }
 
-##### PARAMETERS: 
+##### PARAMETERS:
 * __obj__ `Object` Object of new option values
 
-##### RETURNS: 
+##### RETURNS:
 * `Object` A NEW object of this.options_ and obj merged
 
 _inherited from_: [src/js/component.js#L179](https://github.com/videojs/video.js/blob/master/src/js/component.js#L179)
@@ -521,8 +521,8 @@ _inherited from_: [src/js/component.js#L179](https://github.com/videojs/video.js
 ### player()
 > Return the component's player
 
-##### RETURNS: 
-* `vjs.Player` 
+##### RETURNS:
+* `vjs.Player`
 
 _inherited from_: [src/js/component.js#L126](https://github.com/videojs/video.js/blob/master/src/js/component.js#L126)
 
@@ -530,15 +530,15 @@ _inherited from_: [src/js/component.js#L126](https://github.com/videojs/video.js
 
 ### ready( fn )
 > Bind a listener to the component's ready state
-> 
+>
 > Different from event listeners in that if the ready event has already happened
 > it will trigger the function immediately.
 
-##### PARAMETERS: 
+##### PARAMETERS:
 * __fn__ `Function` Ready listener
 
-##### RETURNS: 
-* `vjs.Component` 
+##### RETURNS:
+* `vjs.Component`
 
 _inherited from_: [src/js/component.js#L769](https://github.com/videojs/video.js/blob/master/src/js/component.js#L769)
 
@@ -548,7 +548,7 @@ _inherited from_: [src/js/component.js#L769](https://github.com/videojs/video.js
 > Remove a child component from this component's list of children, and the
 > child component's element from this component's element
 
-##### PARAMETERS: 
+##### PARAMETERS:
 * __component__ `vjs.Component` Component to remove
 
 _inherited from_: [src/js/component.js#L420](https://github.com/videojs/video.js/blob/master/src/js/component.js#L420)
@@ -558,11 +558,11 @@ _inherited from_: [src/js/component.js#L420](https://github.com/videojs/video.js
 ### removeClass( classToRemove )
 > Remove a CSS class name from the component's element
 
-##### PARAMETERS: 
+##### PARAMETERS:
 * __classToRemove__ `String` Classname to remove
 
-##### RETURNS: 
-* `vjs.Component` 
+##### RETURNS:
+* `vjs.Component`
 
 _inherited from_: [src/js/component.js#L837](https://github.com/videojs/video.js/blob/master/src/js/component.js#L837)
 
@@ -571,11 +571,11 @@ _inherited from_: [src/js/component.js#L837](https://github.com/videojs/video.js
 ### setInterval( fn, interval )
 > Creates an interval and sets up disposal automatically.
 
-##### PARAMETERS: 
+##### PARAMETERS:
 * __fn__ `Function` The function to run every N seconds.
 * __interval__ `Number` Number of ms to delay before executing specified function.
 
-##### RETURNS: 
+##### RETURNS:
 * `Number` Returns the interval ID
 
 _inherited from_: [src/js/component.js#L1202](https://github.com/videojs/video.js/blob/master/src/js/component.js#L1202)
@@ -585,8 +585,8 @@ _inherited from_: [src/js/component.js#L1202](https://github.com/videojs/video.j
 ### setSrc( url )
 > Set the poster source depending on the display method
 
-##### PARAMETERS: 
-* __url__ 
+##### PARAMETERS:
+* __url__
 
 _defined in_: [src/js/poster.js#L72](https://github.com/videojs/video.js/blob/master/src/js/poster.js#L72)
 
@@ -595,11 +595,11 @@ _defined in_: [src/js/poster.js#L72](https://github.com/videojs/video.js/blob/ma
 ### setTimeout( fn, timeout )
 > Creates timeout and sets up disposal automatically.
 
-##### PARAMETERS: 
+##### PARAMETERS:
 * __fn__ `Function` The function to run after the timeout.
 * __timeout__ `Number` Number of ms to delay before executing specified function.
 
-##### RETURNS: 
+##### RETURNS:
 * `Number` Returns the timeout ID
 
 _inherited from_: [src/js/component.js#L1162](https://github.com/videojs/video.js/blob/master/src/js/component.js#L1162)
@@ -609,8 +609,8 @@ _inherited from_: [src/js/component.js#L1162](https://github.com/videojs/video.j
 ### show()
 > Show the component element if hidden
 
-##### RETURNS: 
-* `vjs.Component` 
+##### RETURNS:
+* `vjs.Component`
 
 _inherited from_: [src/js/component.js#L847](https://github.com/videojs/video.js/blob/master/src/js/component.js#L847)
 
@@ -618,14 +618,14 @@ _inherited from_: [src/js/component.js#L847](https://github.com/videojs/video.js
 
 ### trigger( event )
 > Trigger an event on an element
-> 
+>
 >     myComponent.trigger('eventName');
 >     myComponent.trigger({'type':'eventName'});
 
-##### PARAMETERS: 
+##### PARAMETERS:
 * __event__ `Event|Object|String` A string (the type) or an event object with a type attribute
 
-##### RETURNS: 
+##### RETURNS:
 * `vjs.Component` self
 
 _inherited from_: [src/js/component.js#L724](https://github.com/videojs/video.js/blob/master/src/js/component.js#L724)
@@ -635,8 +635,8 @@ _inherited from_: [src/js/component.js#L724](https://github.com/videojs/video.js
 ### triggerReady()
 > Trigger the ready listeners
 
-##### RETURNS: 
-* `vjs.Component` 
+##### RETURNS:
+* `vjs.Component`
 
 _inherited from_: [src/js/component.js#L788](https://github.com/videojs/video.js/blob/master/src/js/component.js#L788)
 
@@ -651,17 +651,17 @@ _defined in_: [src/js/poster.js#L55](https://github.com/videojs/video.js/blob/ma
 
 ### width( [num], skipListeners )
 > Set or get the width of the component (CSS values)
-> 
+>
 > Setting the video tag dimension values only works with values in pixels.
 > Percent values will not work.
 > Some percents can be used, but width()/height() will return the number + %,
 > not the actual computed width/height.
 
-##### PARAMETERS: 
+##### PARAMETERS:
 * __num__ `Number|String` _(OPTIONAL)_ Optional width number
 * __skipListeners__ `Boolean` Skip the 'resize' event trigger
 
-##### RETURNS: 
+##### RETURNS:
 * `vjs.Component` This component, when setting the width
 * `Number|String` The width, when getting
 
